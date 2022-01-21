@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(alexander-shatov-w-qqwn5O-4I-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: fixed;
+  overflow-x: hidden;
+}
+
+.card
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  height: 500px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.card img
+{
+  width: 85%;
+  border-radius: 300px;
+  animation: mymove 14s linear infinite;
+  transition: 0.4s all;
+  margin-top: -20px;
+}
+
+.card img:hover
+{
+  filter:contrast(200%);
+}
+
+@keyframes mymove
+{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+h3
+{
+  font-size: 40px;
+  margin: auto;
+  font-family: raleway;
+   background: -webkit-linear-gradient(45deg, blue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+audio
+{
+  width: 90%;
+  margin-top: 12px;
+  border: 5px solid #000;
+  border-radius: 50px;
+  outline: none;
+}
+
+.cr
+{
+  font-size: 15px;
+  color: #fff;
+}
+
+hr
+{
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 350px) {
+  .card {
+    width: 95%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.card.container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .container p {
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #ccc;
+  font-weight: bold;
+   font-family: 'Montserrat';
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.card .container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.card .container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.card .container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
